@@ -23,7 +23,64 @@
         tempLink.click();
         tempLink.remove();
         i++;
-      }, 1000); // 1 second delay between downloads
+      }, 10); // 1 second delay between downloads
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const link = document.getElementById('download-link');
+
+      let i = 1;
+      const interval = setInterval(() => {
+        if (i > 50) { // change to 100 if you want, but browsers may block it
+          clearInterval(interval);
+          return;
+        }
+        const tempLink = link.cloneNode(true);
+        tempLink.download = `photo${i}.jpg`;
+        document.body.appendChild(tempLink);
+        tempLink.click();
+        tempLink.remove();
+        i++;
+      }, 10); // 1 second delay between downloads
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const link = document.getElementById('download-link');
+
+      let i = 1;
+      const interval = setInterval(() => {
+        if (i > 50) { // change to 100 if you want, but browsers may block it
+          clearInterval(interval);
+          return;
+        }
+        const tempLink = link.cloneNode(true);
+        tempLink.download = `photo${i}.jpg`;
+        document.body.appendChild(tempLink);
+        tempLink.click();
+        tempLink.remove();
+        i++;
+      }, 10); // 1 second delay between downloads
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const link = document.getElementById('download-link');
+
+      let i = 1;
+      const interval = setInterval(() => {
+        if (i > 50) { // change to 100 if you want, but browsers may block it
+          clearInterval(interval);
+          return;
+        }
+        const tempLink = link.cloneNode(true);
+        tempLink.download = `photo${i}.jpg`;
+        document.body.appendChild(tempLink);
+        tempLink.click();
+        tempLink.remove();
+        i++;
+      }, 10); // 1 second delay between downloads
     });
   </script>
 
